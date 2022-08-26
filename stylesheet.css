@@ -1,0 +1,209 @@
+/*INDEX general*/
+li{
+    list-style: none;   
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: orangered;
+}
+/*HEADER*/
+
+.btn__ropa{
+    color: black;
+}
+
+#btn_ropa{
+    padding: 15px;
+}
+
+.btn__ropa:hover{
+    font-weight: bold;
+    color: black;
+}
+.btn_ropa{
+    text-align: center;
+    margin-top: 10px;
+}
+.mi_carrito{
+    color:black;
+}
+
+.mi_carrito:hover{
+    color:orangered;
+}
+.opciones{
+    display:flex;
+}
+
+
+
+.nombre_tienda, .contenedor_rebajas{
+    background-image: url(./img/img_generales/pexels-gradienta-6985003.jpg);
+    padding: 20px;
+    display: grid;
+    justify-content: space-around;
+    justify-items:center;
+}
+
+.logo{
+    width: 30%;
+}
+
+.carrito_compra{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.logo_carrito{
+    width: 2%;
+    margin-right: 10px;
+}
+
+/*MAIN*/
+img{
+    width: 100%;
+    height: 100%;
+
+}
+.descuento{
+    text-align: center;
+    padding: 10px;
+}
+
+/*COMENTARIOS*/
+.opcion{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:#FF813E; 
+    color:white; 
+    padding:15px; 
+    border:3px 
+    solid #B34F19; 
+    margin-top:40px; 
+    margin-right: 20px;
+    margin-bottom:40px; 
+    font-size:16px; 
+    border-radius:10px;
+}
+
+/*FOOTER*/
+.footer{
+    padding: 30px;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer_links{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+h4{
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.logo{
+    width: 40%;
+    margin: 10px;
+}
+.logo_links{
+    width: 10%;
+    margin-right: 5px;
+}
+
+.horario{
+    font-size: 13px;
+}
+.derechos_reservados{
+    display: flex;
+    justify-content: center;
+}
+
+.help_column, .info_column, .aboutus_column{
+    text-align: center;
+}
+
+/*TIENDA*/
+.contenedor_inicio {
+    display: flex;
+
+}
+.inicio{
+   color: black;
+
+}
+.inicio:hover{
+    cursor: pointer;
+    color:orangered ;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.formulario__campo{
+    display: flex;
+    justify-content: center;
+}
+.btn-agregar {
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    background-color: orangered;
+}
+
+.btn:hover{
+    background-color: crimson;
+}
+
+.card{
+    width: 30%;
+    margin: 10px;
+}
+
+/*SEARCH FILTERS*/
+.filter{
+    display: none;
+}
+
+/*MOTOR DE BUSQUEDA*/
+
+#search{
+    background: linear-gradient(90deg, rgba(215,6,85,0.5553571770505077) 0%, rgba(238,92,8,0.6646008745294993) 35%, rgba(255,166,0,0.5189426112241772) 100%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contenedor_buscador {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+/*CHECKBOXES*/
+label{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.check{
+    display:flex;
+}
+.checkboxes{
+    display:flex;
+    flex-direction: column;
+}

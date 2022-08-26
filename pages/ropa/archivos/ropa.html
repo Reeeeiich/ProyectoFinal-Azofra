@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../../../stylesheet.css">
+    <title>ROPA</title>
+</head>
+<body>
+    <div class="contenedor_rebajas">
+        <h1 class="rebajas">ROPA</h1>
+    </div>
+    <div class="contenedor_inicio">
+        <h4 class="inicio"><a class="inicio" href="../../../index.html"> Inicio</h4></a>
+    </div>
+    <div class="carrito_compra">
+        <img class ="logo_carrito" src="../../../img/img_generales/bolsa-de-la-compra_cosas.png" alt="carrito">
+        <a class="mi_carrito" href="/carrito.html">Mi compra</a>           
+    </div>
+
+    <div class="contenedor_buscador">
+        <input type="search" placeholder="Buscar producto..." class="card-filter" id="search">
+    </div>
+
+    <aside>
+        <form class="checkboxes">
+            <div class="check">
+                <label for="camisetas">Camisetas</label>
+                <input type="checkbox" id="camisetas" name="fav_language" value="Camisetas" class="valores">
+            </div>
+            <div class="check">
+                <label for="pantalones">Pantalones</label>
+                <input type="checkbox" id="pantalones" name="fav_language" value="Pantalones" class="valores">
+            </div>
+            <div class="check">
+                <label for="jeans">Jeans</label>
+                <input type="checkbox" id="jeans" name="fav_language" value="Jeans" class="valores">
+            </div>
+            <div class="check">
+                <label for="zapatos">Zapatos</label>
+                <input type="checkbox" id="zapatos" name="fav_language" value="zapatos" class="valores">
+            </div>
+            <div class="check">
+                <label for="bikinis">Bikinis y bañadores</label>
+                <input type="checkbox" id="bikinis" name="fav_language" value="Bikinis" class="valores">
+            </div>
+            <div class="check">
+                <label for="accesorios">Accesorios</label>
+                <input type="checkbox" id="accesorios" name="fav_language" value="Accesorios" class="valores">
+            </div>
+        </form> 
+    </aside>
+
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id ="boton-comprar" class="btn btn-success">Comprar</button>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <div class="footer"> 
+            <div class="left">
+                <div class="footer_links">
+                    <div class="footer_links_column">
+                        <h4>¿Necesitas ayuda?</h4>
+                        <ul class="help_column">
+                            <li>
+                                <a href="#"><img class="logo_links" src="../../../img/img_generales/whatsapp.png" alt="Whatsapp">Whatsapp</a>
+                            </li>
+                            <li>
+                                <a href="#"><img class="logo_links" src="../../../img/img_generales/ventana-de-chat.png" alt="chat">Iniciar chat</a>
+                                <p class ="horario">De lunes a viernes de 08:00 a 22:00.</p>
+                                <p class = "horario">Sábados de 09:00 a 15:00.</p>
+                            </li>
+                            <li>
+                                <a href="#"><img class ="logo_links"src="../../../img/img_generales/telefono-viejo.png" alt="telefono">900485485</a>
+                                <p class="horario">De lunes a viernes de 09:00 a 18:00.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_links_column">
+                        <h4>Ayuda</h4>
+                        <ul class="info_column">
+                            <li >
+                                <a href="#">Compra Online</a>
+                            </li>
+                            <li>
+                                <a href="#">Pago</a>
+                            </li>
+                            <li>
+                                <a href="#">Envío</a>
+                            </li>
+                            <li>
+                                <a href="#">Devoluciones</a>
+                            </li>
+                            <li>
+                                <a href="#">Tarjeta Regalo</a>
+                            </li>
+                            <li>
+                                <a href="#">Ticket regalo</a>
+                            </li>
+                            <li>
+                                <a href="#">Compra como invitado</a>
+                            </li>
+                            <li>
+                                <a href="#">Ticket electrónico</a>
+                            </li>
+                            <li>
+                                <a href="#">Solicitar factura</a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                    <div class="footer_links_column">
+                        <h4>Mandarina Split's</h4>
+                        <ul class="aboutus_column">
+                            <li>
+                                <a href="#">Sobre nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">Trabaja con nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">Nuestras tiendas</a>
+                            </li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>
+            <div class="right">
+                <div class="footer_logos">
+                    <ul class="footer_social_lists">
+                        <li>
+                            <a href="#"><img class="logo" src="../../../img/img_generales/instagram.png" alt="Instagram"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logo" src="../../../img/img_generales/facebook.png" alt="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logo" src="../../..//img/img_generales/gorjeo.png" alt="Twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logo" src="../../../img/img_generales/youtube.png" alt="Youtube"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="logo" src="../../../img/img_generales/pinterest.png" alt="Pinterest"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       <div class="derechos_reservados">
+            <p>Todos los derechos reservados</p>
+       </div>
+    </footer>
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
