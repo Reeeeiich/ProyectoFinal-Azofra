@@ -490,37 +490,6 @@ function searchFilters (input, selector) {
 }
 searchFilters(".card-filter", ".card");
 
-const Allcheckboxes = document.querySelectorAll('input[type="checkbox"]');
-
-let data = {
-  camisetas: false,
-  tops: false,
-  pantalones: false,
-  jeans: false,
-  zapatos: false,
-  bikinis: false,
-  bañador: false,
-  gafas: false,
-  reloj: false, 
-  gorros: false
-}
-
-Allcheckboxes.forEach(checkbox => {
-  checkbox.addEventListener('change', function (e) {
-    //selecciono lo que quiero mostrar
-    data[this.id]=this.checked
-    display_by_data(e.target.value);
-  })
-})
-
-function display_by_data(value){
-  console.log(value);
-  const ropaFiltrada = baseDeDatos.filter((ropa) => ropa.nombre.toLowerCase().includes(value.toLowerCase()))
-  console.log(ropaFiltrada);
-  
-
-}
-
 function añadirProductoAlCarrito(evento) {
     carrito.push(evento.target.getAttribute('marcador'))
     let mensaje = "¡Se ha añadido al carrito!";
